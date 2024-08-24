@@ -8,13 +8,13 @@ function closeMenu() {
 
 //Mostrar curriculum
 function mostrarCurriculum() {
-    window.open("https://lrubio08.github.io/assets/documentos/CvLuisRubio.pdf/assets/documentos/Cv Luis Rubio.pdf", "_blank");
+    window.open("https://lrubio08.github.io/assets/documentos/CvLuisRubio.pdf/assets/documentos/CvLuisRubio.pdf", "_blank");
 }
 
 //descargar curriculum
 function descargarCV() {
     var a = document.createElement('a');
-    a.href = "https://lrubio08.github.io/assets/documentos/CvLuisRubio.pdf/assets/documentos/Cv Luis Rubio.pdf";
+    a.href = "https://lrubio08.github.io/assets/documentos/CvLuisRubio.pdf/assets/documentos/CvLuisRubio.pdf";
     a.download = "Cv Luis Rubio.pdf";
     document.body.appendChild(a);
     a.click();
