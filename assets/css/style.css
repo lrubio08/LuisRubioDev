@@ -210,8 +210,8 @@ p {
 }
 
 .curriculum{
-    text-decoration: none;
-    color: var(--text-color);
+    text-decoration: none !important;
+    color: var(--text-color) !important;
 }
 
 
