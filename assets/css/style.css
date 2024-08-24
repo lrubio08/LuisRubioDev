@@ -209,6 +209,10 @@ p {
     /* Opcional: Alinea el texto para que ocupe todo el espacio */
 }
 
+.curriculum{
+     color: var(--text-color);
+}
+
 /*HERRAMIENTAS*/
 
 .angle2,
