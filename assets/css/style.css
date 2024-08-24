@@ -209,6 +209,11 @@ p {
     /* Opcional: Alinea el texto para que ocupe todo el espacio */
 }
 
+.curriculum{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 
 /*HERRAMIENTAS*/
 
