@@ -8,7 +8,7 @@ function closeMenu() {
 
 //Mostrar curriculum
 function mostrarCurriculum() {
-    window.open("https://github.com/lrubio08/assets/documentos/CvLuisRubio.pdf", "_blank");
+    window.open("https://lrubio08.github.io/LuisRubioDev/assets/documentos/CvLuisRubio.pdf", "_blank");
 }
 
 //descargar curriculum
