@@ -1,0 +1,529 @@
+/*ESTILOS BODY*/
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*ESTILOS BARRA DE NAVEGACION*/
+
+nav {
+    background-color: var(--bg-color-nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-dark-light {
+    border: none !important;
+    width: 3em;
+    border-radius: 50%;
+}
+
+.btn-dark-light:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.text-nav {
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    color: white !important;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 15px 26px 10px;
+    position: relative;
+}
+
+.text-nav:hover {
+    color: white !important;
+}
+
+.text-nav::after {
+    content: '';
+    width: 72%;
+    height: 4px;
+    background-color: #f48480;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 14%;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.text-nav:hover::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/* MAIN  | SECCION PRINCIPAL*/
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: auto;
+    min-height: 400px;
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: var(--box-shadow-principal);
+}
+
+@media screen and (min-width: 600px) {
+    .title {
+        font-size: 4rem;
+    }
+}
+
+.span-title {
+    font-weight: 700;
+}
+
+.section-title {
+    padding-top: 65px;
+    background-color: var(--bg-sec-principal);
+    min-height: 300px;
+}
+
+.angle {
+    position: relative;
+}
+
+.angle::after {
+    content: '';
+    position: absolute;
+}
+
+.angle1,
+.angle1::after {
+    height: 80px;
+    width: 100%;
+}
+
+.angle1 {
+    background-color: var(--bg-a-cerca);
+}
+
+.angle1::after {
+    background-color: var(--bg-sec-principal);
+    clip-path: polygon(100% 100%, 100% 0, 0 0);
+}
+
+
+/*A CERCA DE */
+
+.acerca-de {
+    background-color: var(--bg-a-cerca);
+}
+
+.titulo-y-imagen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-nombre {
+    color: var(--text-color-tn);
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-secciones {
+    color: #F0535D;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    font-size: 32px;
+}
+
+.titulo-parrafo {
+    color: var(--text-color-tn);
+    font-size: 30px;
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+}
+
+.lenguajes {
+    color: var(--text-color-tn);
+    font-weight: 700;
+    font-family: "Montserrat-BoldItalic", sans-serif;
+}
+
+p {
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 1px;
+}
+
+.imagen-perfil {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 250px;
+    height: auto;
+}
+
+.contenido {
+    overflow: hidden;
+    /* Evita que el contenido se desborde */
+}
+
+.texto p {
+    text-align: justify;
+    /* Opcional: Alinea el texto para que ocupe todo el espacio */
+}
+
+
+/*HERRAMIENTAS*/
+
+.angle2,
+.angle2::after {
+    height: 80px;
+    width: 100%;
+}
+
+.angle2 {
+    background-color: var(--bg-a-cerca);
+}
+
+.angle2::after {
+    background-color: var(--bg-sec-skill);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.herramientas {
+    background-color: var(--bg-sec-skill);
+}
+
+.herramienta {
+    background-color: var(--bg-img-skill);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.herramienta:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.angle3,
+.angle3::after {
+    height: 60px;
+    width: 100%;
+}
+
+.angle3 {
+    background-color: var(--bg-sec-principal);
+}
+
+.angle3::after {
+    background-color: var(--bg-sec-skill);
+    clip-path: polygon(100% 100%, 100% 0, 0 0);
+}
+
+
+/*SECCION PROYECTOS */
+
+.mis-proyectos {
+    background-color: var(--bg-sec-principal);
+}
+
+.titulo-proyectos {
+    font-style: italic;
+    font-family: "Crimson Text", serif;
+    color: white;
+    letter-spacing: 1px;
+    padding: 15px 26px 10px;
+}
+
+.container-text-project {
+    box-shadow: var(--box-shadow-project);
+    margin-bottom: 15px;
+}
+
+.img-container-lenguajes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.img-web-tareas {
+    max-width: 60vw;
+    width: auto;
+    height: auto;
+}
+
+.btn-proyecto-tareas.btn {
+    border: none !important;
+    border-radius: 0 !important;
+    text-align: center;
+    width: 200px;
+    background-color: var(--button-bg-pt);
+    padding: 10px;
+    box-shadow: var(--box-shadow-principal);
+    transition: all 0.3s ease;
+}
+
+.btn-proyecto-tareas.btn:hover {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--button-bg-pt-hover);
+}
+
+.btn-proyecto-tareas.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-proyecto-tareas.btn:active {
+    background-color: var(--button-bg-pt);
+    box-shadow: var(--box-shadow-project-active);
+}
+
+.img-web-cineplus {
+    max-width: 60vw;
+    width: 500px;
+    height: auto;
+}
+
+.angle4,
+.angle4::after {
+    height: 60px;
+    width: 100%;
+}
+
+.angle4 {
+    background-color: var(--bg-a-cerca);
+    position: relative;
+}
+
+.angle4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-sec-principal);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+
+/*SECCION CONTACTO */
+
+.contacto {
+    background-color: var(--bg-a-cerca);
+}
+
+.campos-obligatorios {
+    margin: 15px;
+    color: var(--text-color-campos-ob);
+    font-size: 16px;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    margin-bottom: 15px !important;
+    border-right: var(--color-border-form);
+    border-bottom: var(--color-border-form);
+    background-color: var(--bg-color-form);
+}
+
+::placeholder {
+    color: var(--text-color-form)!important;
+    opacity: 1;
+}
+
+.form-control:focus {
+    color: inherit !important;
+    outline: inherit !important;
+    box-shadow: none !important;
+}
+
+.btn-registro.btn {
+    border: none !important;
+    border-radius: 0 !important;
+    text-align: center;
+    width: 200px;
+    background-color: var(--button-bg-cv);
+    padding: 10px;
+    box-shadow: var(--box-shadow-principal);
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+.btn-registro.btn:hover {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--button-bg-pt-hover);
+}
+
+.btn-registro.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-registro.btn:active {
+    background-color: #3a8f8f;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes-sociales span {
+    background-color: var(--bg-img-skill);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(242, 60, 60, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.redes-sociales span:hover {
+    box-shadow: 2px 2px 10px rgba(242, 60, 60, 0.2);
+    transform: scale(1.05);
+}
+
+.parrafo-redes {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text-color-redes);
+    padding: 20px;
+    margin-top: 15px;
+    background-color: var(--bg-img-skill);
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.parrafo-redes:hover {
+    background-color: var(--bg-color-redes-hover);
+    cursor: pointer;
+}
+
+.alert-success {
+    position: fixed;
+    left: 50%;
+    top: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    font-size: 16px;
+}
+
+.alert-success .btn-danger {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.alert-success .btn-danger:hover {
+    color: black;
+}
+
+.angle5,
+.angle5::after {
+    height: 60px;
+    width: 100%;
+}
+
+.angle5 {
+    background-color: var(--bg-color-footer);
+    position: relative;
+}
+
+.angle5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-a-cerca);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+footer {
+    background-color: var(--bg-color-footer);
+}
+
+.text-footer {
+    font-style: italic;
+    color: white;
+    font-family: '"Crimson Text", serif';
+    letter-spacing: 2px;
+    margin: 1rem;
+}
+
+.btn-cv.btn {
+    border: none !important;
+    border-radius: 0 !important;
+    text-align: center;
+    width: 200px;
+    background-color: var(--button-bg-cv);
+    padding: 10px;
+    box-shadow: var(--box-shadow-principal);
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+.btn-cv.btn:hover {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--button-bg-pt-hover);
+}
+
+.btn-cv.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-cv.btn:active {
+    background-color: var(--button-bg-cv);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

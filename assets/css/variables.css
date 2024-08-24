@@ -1,0 +1,51 @@
+/*Variables css */
+
+:root {
+    --bg-color-nav: rgba(16, 137, 177, 0.9);
+    --bg-sec-principal: #4dabab;
+    --bg-a-cerca: #dde0d7;
+    --bg-sec-skill: #fff0d7;
+    --bg-color-project: #5dd3d3;
+    --bg-color-footer: rgba(16, 137, 177);
+    --bg-color-redes-hover: #e9ecef;
+    --bg-color-form: white;
+    --box-shadow-principal: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    --box-shadow-project: 4px 4px 7px rgba(0, 0, 0, 0.3);
+    --box-shadow-project-active: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    --text-color: black;
+    --text-color-p: black;
+    --text-color-tn: #1c2273;
+    --text-color-redes: #ff6347;
+    --text-color-campos-ob: #f00e1d;
+    --text-color-form: rgb(110, 108, 108);
+    --button-bg-cv: #a0a19e;
+    --button-bg-pt: #4dabab;
+    --button-bg-pt-hover: #3a8f8f;
+    --color-border-form: 3px solid red;
+}
+
+[data-theme="dark"] {
+    --bg-color-nav: rgba(0, 0, 0, 0.8);
+    --bg-sec-principal: #121212;
+    --bg-a-cerca: #1b0c0c;
+    --bg-sec-skill: #1F1F1F;
+    --bg-img-skill: rgba(255, 240, 215, 0.4);
+    --bg-color-project: rgba(255, 240, 215, 0.3);
+    --bg-color-footer: black;
+    --bg-color-redes-hover: rgb(121, 116, 116);
+    --bg-color-form: rgba(255, 240, 215, 0.4);
+    --box-shadow-principal: 6px 6px 10px rgba(200, 200, 200, 0.7);
+    --box-shadow-project: 4px 4px 7px rgba(200, 200, 200, 0.5);
+    --box-shadow-project-active: inset 2px 2px 5px rgba(0, 0, 0, 1);
+    --text-color: #E0E0E0;
+    --text-color-p: #B0B0B0;
+    --text-color-tn: white;
+    --text-color-redes: #eee2e2;
+    --text-color-campos-ob: white;
+    --text-color-form: #eee2e2;
+    --button-bg-cv: #885f5f;
+    --button-bg-pt: #885f5f;
+    --button-bg-pt-hover: #6d4a4a;
+    --button-text-color: #ffffff;
+    --color-border-form: 3px solid #998686;
+}

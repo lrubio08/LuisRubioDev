@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollador full-stack especializado en crear sitios web personalizados y escalables. Descubre mis últimos proyectos y cómo puedo ayudarte a llevar tu idea a la realidad">
+
+    <!--Css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Variables css-->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Luis Rubio | Portafolio Web</title>
+</head>
+
+<body>
+    <header>
+        <!--Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light text-light">
+            <div class="container-fluid">
+                <a id="theme-toggle" class="navbar-brand btn-dark-light">
+                    <img class="btn-dark-light" src="assets/img/sol.png" alt="modos light y dark">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-nav " aria-current="page" href="#" onclick="closeMenu()">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nav " href="#acerca-de" onclick="closeMenu()">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nav" href="#herramientas" onclick="closeMenu()">Herramientas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nav" href="#mis-proyectos" onclick="closeMenu()">Mis proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nav" href="#contacto" onclick="closeMenu()">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Seccion principal-->
+        <section>
+            <div class="section section-title " id="title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12  d-flex justify-content-center align-items-center">
+                            <h1 class="title">
+                                <span>¡Hola, Soy Luis Rubio Ramírez!</span>
+                                <br>
+                                <span class="span-title">"Desarrollador FullStack" </span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="angle angle1"></div>
+        </section>
+        <!--Acerca de -->
+        <section>
+            <div class="section acerca-de" id="acerca-de">
+                <div class="container">
+                    <h3 class="text-center titulo-nombre">¿Quién es Luis?</h3>
+                    <div class="contenido">
+                        <img class="imagen-perfil" src="assets/img/yo.jpg" alt="Luis Rubio">
+                        <div class="texto">
+                            <h4 class="titulo-parrafo">"Un desarrollador Full Stack apasionado por la tecnología y la programación".</h4>
+                            <p>Recientemente completé un bootcamp intensivo de Full Stack donde adquirí habilidades en una variedad de tecnologías, incluyendo <span class="lenguajes">Python con Django, HTML, CSS, JavaScript, Bootstrap y bases de datos PostgreSQL</span>.</p>
+                            <p>Durante el bootcamp, trabajé en varios proyectos que me permitieron aplicar y profundizar en mis conocimientos técnicos. Aprendí a construir <span class="lenguajes">aplicaciones web desde cero</span>, desde el diseño de la
+                                base de datos hasta la creación de <span class="lenguajes">interfaces de usuario atractivas, funcionales y responsivas</span>.</p>
+                            <p>Actualmente estoy inmerso en un bootcamp intensivo de <span class="lenguajes">Java</span>, donde estoy adquiriendo una sólida base en los fundamentos de la <span class="lenguajes">programación orientada a objetos, estructuras de datos y algoritmos </span>.
+                                Estoy particularmente entusiasmado con las posibilidades que ofrece Java para desarrollar <span class="lenguajes">aplicaciones robustas y escalables</span>. A medida que avanzo en mis estudios, estoy ansioso por aplicar
+                                mis conocimientos en proyectos prácticos y contribuir a equipos de desarrollo.
+                            </p>
+                            <p>Me encanta el desafío de resolver problemas complejos y la satisfacción de construir algo desde cero. Siempre estoy buscando oportunidades para aprender y crecer como desarrollador. ¡Espero tener la oportunidad de trabajar
+                                contigo en el futuro!</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center mt-4">
+                        <button class="btn btn-primary btn-cv m-2" onclick="mostrarCurriculum()">Ver Curriculum</button>
+                        <button class="btn btn-primary btn-cv m-2" onclick="descargarCV()">Descargar Curriculum</button>
+                    </div>
+                </div>
+            </div>
+            <div class="angle angle2"></div>
+        </section>
+
+
+        <!--SECCION HABILIDADES Y HERRAMIENTAS -->
+        <section>
+            <div class="section herramientas" id="herramientas">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="titulo-secciones m-2 "> </h2>
+                            <h3 class="titulo-nombre m-2">Mis Herramientas Adquiridas</h3>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-sm-5 col-md-3 col-lg-4  d-flex flex-column align-items-center herramienta">
+                            <img class="img-herramientas" src="assets/img/python-100.png" alt="lenguaje de programacion Python">
+                            <p>Python</p>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-3 col-lg-4  d-flex flex-column align-items-center herramienta">
+                            <img class="img-herramientas" src="assets/img/django-100.png" alt="Framework django">
+                            <p>Django</p>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-3 col-lg-4  d-flex flex-column align-items-center herramienta">
+                            <img class="img-herramientas" src="assets/img/javascript-100.png" alt="lenguaje de programacón JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-3 col-lg-4  d-flex flex-column align-items-center herramienta">
+                            <img class="img-herramientas" src="assets/img/html5-100.png" alt="Lenguaje de marcado de hipertexto HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-3 col-lg-4  d-flex flex-column align-items-center herramienta">
+                            <img class="img-herramientas" src="assets/img/css3-100.png" alt="Hoja de estilos en cascada CSS">
+                            <p>CSS</p>
+                        </div>
+                        <div class="col-12 col-sm-5 col-md-3 col-lg-4  d-flex flex-column align-items-center herramienta">
+                            <img class="img-herramientas" src="assets/img/bootstrap-100.png" alt="framework de diseño web Bootstrap">
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="angle angle3"></div>
+        </section>
+        <!--SECCION MIS PROYECTOS -->
+        <section>
+            <div class="section  mis-proyectos" id="mis-proyectos">
+                <div class="container">
+                    <h2 class="titulo-secciones"> </h2>
+                    <h3 class="titulo-nombre">Aplicando lo aprendido</h3>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mt-3 container-text-project justify-content-center">
+                            <h4 class="titulo-proyectos"> TaskSmart | Gestor de Tareas Pendientes</h4>
+                            <p>
+                                Gestor de Tareas Pendientes, una herramienta diseñada para simplificar la organización y administración eficiente de tus tareas diarias. Con esta aplicación, puedes crear, eliminar y gestionar tus tareas de manera intuitiva, manteniendo un control total
+                                sobre tus responsabilidades.
+                            </p>
+                            <div class="img-container-lenguajes">
+                                <img class="icon-html" src="assets/img/icons8-html-25.png" alt="HTML">
+                                <img class="icon-css" src="assets/img/icons8-css-25.png" alt="CSS">
+                                <img class="icon-bootstrap" src="assets/img/icons8-oreja-25.png" alt="Boostrap">
+                                <img class="icon-js" src="assets/img/icons8-javascript-25.png" alt="JavaScript">
+                                <img class="icon-django" src="assets/img/icons8-django-25 (2).png" alt="Django">
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-center">
+                                    <a target="_blank" href="https://tasksmart.fly.dev/"><button class="btn btn-primary mt-3 mb-2 btn-proyecto-tareas">Enlace Web</button></a>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex justify-content-center">
+                                    <a target="_blank" href="https://github.com/lrubio08/TaskSmart.git"><button class="btn btn-primary mt-3 mb-2 btn-proyecto-tareas">Repositorio GitHub</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img class="img-web-tareas" src="assets/img/TaskSmart1.png" alt="Proyecto TaskSmart">
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-12  col-lg-6 d-flex justify-content-center">
+                            <img class="img-web-cineplus" src="assets/img/cine-plus.png" alt="Proyecto Cine Plus">
+                        </div>
+                        <div class="col-12  col-lg-6 mt-3 container-text-project   justify-content-center">
+                            <h4 class="titulo-proyectos"> CinePlus | Explorador Cinematografico</h4>
+                            <p>
+                                CinePlus utiliza la poderosa API de TMDB para ofrecerte una experiencia cinematográfica completa. Descubre las últimas películas en cartelera, explora trailers, podras conocer el talentoso reparto de cada película y mucho más.
+                            </p>
+                            <div class="img-container-lenguajes">
+                                <img class="icon-html" src="assets/img/icons8-html-25.png" alt="HTML">
+                                <img class="icon-css" src="assets/img/icons8-css-25.png" alt="CSS">
+                                <img class="icon-bootstrap" src="assets/img/icons8-oreja-25.png" alt="Boostrap">
+                                <img class="icon-js" src="assets/img/icons8-javascript-25.png" alt="JavaScript">
+                                <img class="icon-django" src="assets/img/icons8-django-25 (2).png" alt="Django">
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-center">
+                                    <a target="_blank" href="https://cineplus.fly.dev/"><button class="btn btn-primary mt-3 mb-2 btn-proyecto-tareas">Enlace Web</button></a>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex justify-content-center">
+                                    <a target="_blank" href="https://github.com/lrubio08/cineplus"><button class="btn btn-primary mt-3 mb-2 btn-proyecto-tareas">Repositorio GitHub</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="angle angle4"></div>
+        </section>
+        <!--SECCION CONTACTO -->
+        <section>
+            <div class="section contacto" id="contacto">
+                <div class="container">
+                    <h2 class="titulo-secciones"></h2>
+                    <h2 class="titulo-nombre text-center m-2">Formulario de Contacto</h2>
+                    <div class="container mt-4 mb-4 ">
+                        <div class="row ">
+                            <div class="col-12 col-lg-6  justify-content-center">
+                                <form class="" id="formContact">
+                                    <p class="campos-obligatorios"> Todos los campos son obligatorios</p>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <input type="text" name="firstName" class="form-control" id="userName" placeholder="Ingrese su nombre" oninput="changeStyle(this)" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="lastName" class="form-control" placeholder="Ingrese su apellido" required id="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="ejemplo@ejemplo.com" required>
+                                    </div>
+                                    <div class="form-group" id="message">
+                                        <textarea class="form-control" name="msg" id="msg" placeholder="Dejame un mensaje" rows="3" required></textarea>
+                                    </div>
+                                    <button type="submit " class="btn btn-primary btn-registro mt-2 w-100 ">Enviar Mensaje</button>
+                                </form>
+                            </div>
+                            <!--Redes Sociales-->
+                            <div class="col-12 col-lg-6 d-flex align-items-center ">
+                                <div class="row ">
+                                    <div class="col-6 redes-sociales ">
+                                        <span class="text-center ">
+                                            <a href="https://github.com/lrubio08 " target="_blank "><img src="assets/img/github.png " alt="GitHub"></a>
+                                        </span>
+                                    </div>
+                                    <div class="col-6 redes-sociales ">
+                                        <span class="text-center ">
+                                            <a href="https://linkedin.com/in/luis-rubio-ramírez " target="_blank "><img src="assets/img/linkedin.png " alt="Linkedin "></a>
+                                        </span>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <p class="text-center parrafo-redes ">¡No dudes en ponerte en contacto por el medio que desees!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER-->
+        <footer class="pb-3 ">
+            <div class="angle angle5 "></div>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-12 col-lg-6 ">
+                        <h3 class="text-light text-footer ">Contacto</h3>
+                        <hr class="text-light text-footer ">
+                        <p class="text-footer ">
+                            <!-- Este formato utiliza HTML Entity Encoding para codificar la dirección de correo electrónico y protegerla contra los bots de spam. -->
+                            Escribeme un correo:
+                            <a href="mailto:&#x6c;&#x72;&#x75;&#x62;&#x69;&#x6f;&#x31;&#x31;&#x37;&#x39;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d; " target="_blank ">
+                                <img class="ml-2 " src="assets/img/correo.png " alt="icono correo electronico ">
+                            </a>
+                        </p>
+                        <p class="text-footer ">
+                            Contactame por Whatsapp
+                            <a href="https://wa.me/+56933249303 " target="_blank ">
+                                <img class="ml-2 " src="assets/img/whatsapp.png " alt="icono whatsapp">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 ">
+                        <h3 class="text-light text-footer ">Derechos de autor</h3>
+                        <hr class="text-light text-footer ">
+                        <p class="text-light text-footer ">Desarrollado por: Luis Rubio Ramírez</p>
+                        <p class="text-light text-footer ">&copy 2023-2024 Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <!--Script EmailJS-->
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js ">
+    </script>
+    <!--Script Sweet alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <!--Scripts JS-->
+    <script src="assets/js/scripts.js "></script>
+</body>
+
+</html>
