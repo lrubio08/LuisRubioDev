@@ -30,7 +30,7 @@ El propósito principal de este portafolio es demostrar mis habilidades como des
 Para ver el portafolio, puedes:
 
 1. Abrir el archivo `index.html` en cualquier navegador web.
-2. O visitar la versión en línea del portafolio a través de [GitHub Pages](https://github.com/tu-usuario/mi-portafolio).
+2. O visitar la versión en línea del portafolio a través de [GitHub Pages](https://lrubio08.github.io/LuisRubioDev/).
 
 ## Créditos
 
