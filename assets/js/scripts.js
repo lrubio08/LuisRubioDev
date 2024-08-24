@@ -1,4 +1,4 @@
-// cierra el menu cuando el usario hace click en uno de sus enlaces 
+// cierra el menu cuando el usuario hace click en uno de sus enlaces 
 function closeMenu() {
     let navbarCollapse = document.querySelector('.navbar-collapse');
     if (navbarCollapse.classList.contains('show')) {
@@ -6,10 +6,6 @@ function closeMenu() {
     }
 }
 
-//Mostrar curriculum
-function mostrarCurriculum() {
-    window.open("https://lrubio08.github.io/LuisRubioDev/assets/documentos/CvLuisRubio.pdf", "_blank");
-}
 
 //descargar curriculum
 function descargarCV() {
