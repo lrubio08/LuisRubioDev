@@ -8,14 +8,14 @@ function closeMenu() {
 
 //Mostrar curriculum
 function mostrarCurriculum() {
-    window.open("/assets/documentos/CvLuisRubio.pdf", "_blank");
+    window.open("/LuisRubioDev/assets/documentos/CvLuisRubio.pdf", "_blank");
 }
 
 //descargar curriculum
 function descargarCV() {
     var a = document.createElement('a');
     a.href = "/LuisRubioDev/assets/documentos/CvLuisRubio.pdf";
-    a.download = "Cv Luis Rubio.pdf";
+    a.download = "CvLuisRubio.pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
