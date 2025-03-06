@@ -189,6 +189,7 @@ p {
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 1px;
+    word-break: break-word;
 }
 
 .imagen-perfil {
@@ -209,10 +210,29 @@ p {
     /* Opcional: Alinea el texto para que ocupe todo el espacio */
 }
 
-.curriculum{
+.curriculum {
     text-decoration: none;
     color: var(--text-color) !important;
 }
+
+
+/* Estilos para pantallas pequeñas */
+
+@media (max-width: 770px) {
+    .imagen-perfil {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        width: 100%;
+        max-width: 300px;
+        /* Ajusta el tamaño máximo de la imagen en pantallas pequeñas */
+    }
+    .texto p {
+        word-break: normal;
+        /* Ajusta el comportamiento de la separación de palabras */
+    }
+}
+
 
 /*HERRAMIENTAS*/
 
@@ -503,6 +523,11 @@ footer {
     font-family: '"Crimson Text", serif';
     letter-spacing: 2px;
     margin: 1rem;
+}
+
+.enlaces-footer {
+    color: white;
+    text-decoration: none;
 }
 
 .btn-cv.btn {

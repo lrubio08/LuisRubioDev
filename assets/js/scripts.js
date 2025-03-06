@@ -10,7 +10,7 @@ function closeMenu() {
 //descargar curriculum
 function descargarCV() {
     var a = document.createElement('a');
-    a.href = "/LuisRubioDev/assets/documentos/CvLuisRubio.pdf";
+    a.href = "assets/documentos/CvLuisRubio.pdf";
     a.download = "CvLuisRubio.pdf";
     document.body.appendChild(a);
     a.click();
