@@ -21,11 +21,11 @@ function descargarCV() {
 
 
 // Inicializa EmailJS al cargar la página
-emailjs.init("Tbv4Ah_0_UfyfyscX");
+emailjs.init("inhnDzUSKcFJc2S3q");
 
 // ID del servicio y plantilla que usará EmailJS para enviar el correo
-const serviceId = "service_yvec8hp";
-const templateId = "template_0mln2jt";
+const serviceId = "service_x0dvrvy";
+const templateId = "template_ui22vhl";
 
 
 // Maneja el envío del formulario de contacto
