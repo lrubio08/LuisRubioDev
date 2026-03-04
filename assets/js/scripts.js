@@ -17,40 +17,36 @@ function descargarCV() {
     document.body.removeChild(a);
 }
 
-//Envio de correos
-
-
-// Inicializa EmailJS al cargar la página
-emailjs.init("inhnDzUSKcFJc2S3q");
-
-// ID del servicio y plantilla que usará EmailJS para enviar el correo
-const serviceId = "service_x0dvrvy";
-const templateId = "template_ui22vhl";
-
-
 // Maneja el envío del formulario de contacto
-function enviarEmail(event) {
-    event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
+async function enviarEmail(event) {
+    event.preventDefault();
+    
+    const formulario = document.getElementById("formContact");
+    const datos = new FormData(formulario);
 
-    // Envía el formulario utilizando EmailJS
-    emailjs.sendForm(serviceId, templateId, formularioContacto)
-        .then(() => {
-            // Muestra un mensaje de éxito
-            Swal.fire("¡Su mensaje ha sido enviado con éxito!");
-            formularioContacto.reset(); // Limpia el formulario después de enviarlo
-        })
-        .catch((error) => {
-            // Manejo de errores
-            console.error('Error al enviar el correo:', error);
-            Swal.fire({
-                icon: 'error',
-                title: 'Hubo un error al enviar el mensaje',
-                text: "No ha sido posible enviar su mensaje"
-            });
+    try {
+        const response = await fetch("https://formspree.io/f/xqedrppq", {
+            method: "POST",
+            body: datos,
+            headers: { "Accept": "application/json" }
         });
+
+        if (response.ok) {
+            Swal.fire("¡Su mensaje ha sido enviado con éxito!");
+            formulario.reset();
+        } else {
+            throw new Error("Error en el envío");
+        }
+    } catch (error) {
+        console.error('Error al enviar el correo:', error);
+        Swal.fire({
+            icon: 'error',
+            title: 'Hubo un error al enviar el mensaje',
+            text: "No ha sido posible enviar su mensaje"
+        });
+    }
 }
 
-//Se obtiene el formulario y agrega el evento 'submit' para manejar el envío del formulario
 const formularioContacto = document.getElementById("formContact");
 formularioContacto.addEventListener("submit", enviarEmail);
 
